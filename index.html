@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yudish Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/6569662027.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Yudish</span><br>Shrestha From Nepal</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------about------------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/yudish.jpg" alt="about">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae obcaecati quidem veritatis error dolor, assumenda consectetur enim vel consequatur debitis dolore tempora fuga, ut officia voluptatem atque repudiandae voluptate natus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, totam maxime. Voluptates id ex, voluptas </p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>HTML</span><br>Intermediat</li>
+                            <li><span>CSS</span><br>Intermediate</li>
+                            <li><span>Tailwind CSS</span><br>Intermediate</li>
+                            <li><span>JavaScript</span><br>Basic</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web Development</li>
+                            <li><span>App Development</span><br>Building Android./iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Current</span><br>Mindrisers Institute of Technology</li>
+                            <li><span>2022-Running</span><br>BCA from Everest College, Thapathali</li>
+                            <li><span>2020</span><br>+2 from Merryland College, Biratnagar</li>
+                        </ul>
+                    </div>
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------Services------------ -->
+     <div id="services">
+        <div class="container">
+             <h1 class="sub-title">My Services</h1>
+             <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsam perferendis totam illo dignissimos est facere sint maxime architecto impedit, sed cupiditate, possimus repellendus adipisci consequuntur officiis earum atque vitae?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsam perferendis totam illo dignissimos est facere sint maxime architecto impedit, sed cupiditate, possimus repellendus adipisci consequuntur officiis earum atque vitae?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsam perferendis totam illo dignissimos est facere sint maxime architecto impedit, sed cupiditate, possimus repellendus adipisci consequuntur officiis earum atque vitae?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+             </div>
+        </div>
+     </div>
+     <!-- -----------------portfolio----------------- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/image1.png" >
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est culpa repellat reprehenderit ex.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image2.png" >
+                    <div class="layer">
+                        <h3>News Portal App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est culpa repellat reprehenderit ex.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image3.png" >
+                    <div class="layer">
+                        <h3>Hospital Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est culpa repellat reprehenderit ex.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+      <!-- ----------------------contact--------------------------- -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9819370588</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/yudhishx.shrestha/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/yudish.69/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="images/example-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Yudish. Made with <i class="fa-solid fa-heart"></i> </p>
+        </div>
+       </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby2WaQa2hoeGpI0gzN0EH0ltCI1poKSmc0vhqujuwWBQKB7G6tfsFVI_ndW2wK8lNou/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
