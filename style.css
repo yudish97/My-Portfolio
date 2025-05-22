@@ -24,8 +24,12 @@ body {
     padding: 10px 10%;
 }
 
-nav h2 {
+nav h2{
     font-size: 49px;
+}
+
+nav h2 span{
+    color: red;
 }
 
 nav {
